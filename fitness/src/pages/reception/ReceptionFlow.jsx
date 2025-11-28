@@ -41,7 +41,7 @@ const initialNodes = [
   { id: 'l1', type: 'custom', position: { x: 0, y: 0 }, data: { label: '预约参观' } },
   { id: 'l2', type: 'custom', position: { x: 0, y: 150 }, data: { label: '新人欢迎仪式\nNewer Welcome\nCeremony' } },
   { id: 'l3', type: 'custom', position: { x: 0, y: 300 }, data: { label: '代泊车\nValet parking' } },
-  { id: 'l4', type: 'custom', position: { x: 0, y: 450 }, data: { label: '登记' } },
+  { id: 'l4', type: 'custom', position: { x: 0, y: 450 }, data: { label: '登记\ncheck in' } },
   { id: 'l5', type: 'custom', position: { x: 0, y: 600 }, data: { label: '洽谈，了解学员情况\n为宾客提供食物\nDiscuss and understand the students\'\nsituation;Provide food for the guests' }, style: { width: 250 } },
   { id: 'l6', type: 'custom', position: { x: 0, y: 850 }, data: { label: '参观场馆\nVisiting the g...' } },
 
