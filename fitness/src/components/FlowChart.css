@@ -1,0 +1,165 @@
+.flowchart-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.flowchart-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flowchart-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.flowchart-wrapper .react-flow {
+  width: 100%;
+  height: 100%;
+}
+
+/* React Flow 节点悬停效果 */
+.flowchart-wrapper .react-flow__node {
+  transition: all 0.3s ease;
+}
+
+.flowchart-wrapper .react-flow__node:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  z-index: 10;
+}
+
+/* React Flow 控件样式 */
+.flowchart-wrapper .react-flow__controls {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.flowchart-wrapper .react-flow__controls button {
+  border: none;
+  background: white;
+}
+
+.flowchart-wrapper .react-flow__controls button:hover {
+  background: #f0f0f0;
+}
+
+/* 小地图样式 */
+.flowchart-wrapper .react-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 流程说明区域 - PC端横向布局 */
+.flowchart-legend {
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 25px 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.flowchart-legend h3 {
+  color: #667eea;
+  font-size: 1.3rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.flowchart-legend > p {
+  color: #666;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.flowchart-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex: 1;
+}
+
+.flowchart-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #333;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cycle-note {
+  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .flowchart-container {
+    padding: 15px;
+  }
+
+  .flowchart-title {
+    font-size: 1.8rem;
+  }
+
+  .flowchart-wrapper {
+    min-height: 400px;
+  }
+
+  .flowchart-legend ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .flowchart-title {
+    font-size: 1.5rem;
+  }
+
+  .flowchart-wrapper {
+    min-height: 350px;
+  }
+
+  .flowchart-legend {
+    padding: 15px;
+  }
+
+  .flowchart-legend h3 {
+    font-size: 1.2rem;
+  }
+}
