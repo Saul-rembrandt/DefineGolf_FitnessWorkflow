@@ -1,11 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import FlowChart from './components/FlowChart';
-import { ReceptionFlow, DetailPage } from './pages/reception/index';
-import Reception from './pages/Reception';
-import Tour from './pages/Tour';
-import Assessment from './pages/Assessment';
-import Training from './pages/Training';
-import Reward from './pages/Reward';
+import { ReceptionFlow, DetailPage, Reception } from './pages/reception/index';
+import { Tour } from './pages/tour/index';
+import { Assessment } from './pages/assessment/index';
+import { Training } from './pages/training/index';
+import { Reward } from './pages/reward/index';
 import './App.css';
 
 function App() {

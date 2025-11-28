@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './PageStyles.css';
+import '../PageStyles.css';
 
 function Training() {
   const navigate = useNavigate();
