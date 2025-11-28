@@ -63,6 +63,10 @@ function AppointmentArrival() {
             </div>
           </div>
         </div>
+
+        <div className="image-container">
+          <img src="/images/reception/预约参观.jpeg" alt="预约参观" />
+        </div>
       </div>
     </div>
   );
