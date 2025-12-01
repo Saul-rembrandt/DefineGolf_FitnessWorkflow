@@ -51,7 +51,7 @@ const initialNodes = [
   { id: 'r3', type: 'custom', position: { x: 400, y: 300 }, data: { label: 'Is VIP ?'} },
   
   // 分支
-  { id: 'r4a', type: 'custom', position: { x: 250, y: 450 }, data: { label: '欢迎口号\nwelcome slogan' } },
+  { id: 'r4a', type: 'custom', position: { x: 250, y: 540 }, data: { label: '欢迎口号\nwelcome slogan' } },
   { id: 'r4b', type: 'custom', position: { x: 550, y: 450 }, data: { label: '迎宾礼仪\nWelcome Etiquette' } },
   { id: 'r4c', type: 'custom', position: { x: 550, y: 550 }, data: { label: '贵宾室提前打开' } },
   

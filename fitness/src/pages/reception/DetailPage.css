@@ -25,11 +25,12 @@
 }
 
 .detail-page .info-card {
-  background: white;
+  background: #F1F8E9; /* 浅绿色偏白背景，和流程节点呼应 */
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
   padding: 40px;
   overflow: hidden;
+  border: 2px solid #2E7D32; /* 外边框深绿色 */
 }
 
 .detail-page .info-header {
@@ -85,7 +86,7 @@
 
 .detail-page .highlight-box {
   background: linear-gradient(to right, #e8f5e9, #f1f8e9);
-  border-left: 5px solid #4CAF50;
+  border-left: 5px solid #2E7D32;
   padding: 20px;
   border-radius: 0 8px 8px 0;
   margin-top: 30px;

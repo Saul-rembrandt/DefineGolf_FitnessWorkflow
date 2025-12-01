@@ -30,6 +30,18 @@ function DetailPage() {
   const dataIndex = nodeIdToDataIndex[nodeId];
   const data = receptionData[dataIndex];
 
+  // 根据 slug 映射到 public 中的示意图片（放在 public/images/reception）
+  const slugToImage = {
+    appointment: '/images/reception/预约参观.jpeg',
+    welcome: '/images/reception/贵宾室.png',
+    valet: '/images/reception/贵宾室.png',
+    registration: '/images/reception/贵宾室.png',
+    consultation: '/images/reception/洽谈.jpg',
+    tour: '/images/reception/参观场馆.jpeg',
+  };
+
+  const heroImage = slugToImage[slug];
+
   if (!data) {
     return (
       <div className="detail-page">
@@ -98,6 +110,12 @@ function DetailPage() {
             </div>
           </div>
         </div>
+
+        {heroImage && (
+          <div className="image-container">
+            <img src={heroImage} alt={data.title} />
+          </div>
+        )}
       </div>
     </div>
   );
