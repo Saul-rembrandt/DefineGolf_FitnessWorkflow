@@ -33,9 +33,9 @@ function DetailPage() {
   // 根据 slug 映射到 public 中的示意图片（放在 public/images/reception）
   const slugToImage = {
     appointment: '/images/reception/预约参观.jpeg',
-    welcome: '/images/reception/贵宾室.png',
-    valet: '/images/reception/贵宾室.png',
-    registration: '/images/reception/贵宾室.png',
+    welcome: '/images/reception/新人欢迎仪式.png',
+    valet: '/images/reception/泊车.jpg',
+    registration: '/images/reception/登记.png',
     consultation: '/images/reception/洽谈.jpg',
     tour: '/images/reception/参观场馆.jpeg',
   };
@@ -62,7 +62,10 @@ function DetailPage() {
       </button>
       
       <div className="content-wrapper">
-        <h1 className="page-title">{data.title}</h1>
+        <h1 className="page-title">
+          {data.title}
+          {data.title_en && <span className="title-en"> {data.title_en}</span>}
+        </h1>
         
         <div className="info-card">
           <div className="info-header">
@@ -89,6 +92,11 @@ function DetailPage() {
                   <strong>亮点：</strong>{data.cn.highlight}
                 </div>
               )}
+              {heroImage && (
+                <div className="image-container">
+                  <img src={heroImage} alt={data.title} />
+                </div>
+              )}
             </div>
 
             <div className="vertical-divider"></div>
@@ -110,12 +118,6 @@ function DetailPage() {
             </div>
           </div>
         </div>
-
-        {heroImage && (
-          <div className="image-container">
-            <img src={heroImage} alt={data.title} />
-          </div>
-        )}
       </div>
     </div>
   );

@@ -190,7 +190,7 @@ function FlowChart() {
       reception: '/reception/flow',
       tour: '/tour',
       assessment: '/assessment',
-      training: '/training',
+      training: '/training/flow',
       reward: '/reward',
     };
     if (routes[node.id]) {
