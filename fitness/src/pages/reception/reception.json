@@ -1,7 +1,7 @@
 [
   {
     "title": "预约参观",
-    "title_en": "",
+    "title_en": "Appointment Visit",
     "cn": {
       "staff": "销售顾问",
       "location": "贵宾关系维护中心",
@@ -17,7 +17,7 @@
   },
   {
     "title": "新人欢迎仪式",
-    "title_en": "",
+    "title_en": "New Member Welcome Ceremony",
     "cn": {
       "staff": "前台 / 客服 + 销售顾问",
       "location": "入口迎宾台",
@@ -33,7 +33,7 @@
   },
   {
     "title": "代泊车",
-    "title_en": "",
+    "title_en": "Valet Parking",
     "cn": {
       "staff": "代泊车员",
       "location": "停车区",
@@ -43,13 +43,13 @@
     "en": {
       "staff": "Valet Attendant",
       "location": "Parking Area",
-      "description": "",
+      "description": " The valet attendant waits in advance on the right side of the drop-off point, wearing a neat uniform with a clearly visible name badge, hands naturally folded in front. As the guest’s vehicle approaches slowly, the attendant steps forward half a pace and uses clear hand signals to indicate where to stop. Once the vehicle has come to a complete stop, the attendant smiles, offers a greeting, and speaks proactively: “Good evening. Welcome to the estate. I'll take care of valet parking—please step out at your ease.” After confirming the guests have exited safely, the attendant briefly verifies the vehicle details and any personalized preferences: “Would you like me to help with items from the trunk? And when you depart, would you prefer the car parked closer to the exit? The attendant then receives the key with both hands (or guides the guest to use a digital key/claim ticket), explains the retrieval process and expected parking area on the spot, and hands over the valet claim ticket: “Here is your valet ticket. Please present it when you’re ready to leave, and we’ll bring the car directly to you. The attendant makes a quick walk-around to confirm the vehicle condition and gently reminds the guest about valuables, moving with efficiency and discretion. The car is started within the guest’s view, then driven smoothly into the parking area at low speed, yielding to pedestrians throughout, while the vehicle number and parking location are relayed via radio for seamless coordination. The drop-off point remains calm and orderly at all times: on rainy days, umbrella covers and anti-slip mats are offered promptly; luggage carts are available on request. Guests never need to search for a parking space—they simply proceed through the entrance with ease, enjoying a sense of reassurance and premium hospitality from the very first step.",
       "highlight": "Through safe, well-organized drop-off guidance, a transparent and efficient handover process, and proactive, personalized care, guests feel at ease and valued from the very moment they step out of the car."
     }
   },
   {
     "title": "登记",
-    "title_en": "",
+    "title_en": "Registration",
     "cn": {
       "staff": "客服",
       "location": "贵宾登记区 / 更衣室入口",
@@ -65,7 +65,7 @@
   },
   {
     "title": "洽谈",
-    "title_en": "",
+    "title_en": "Consultation",
     "cn": {
       "staff": "销售顾问 + 米其林厨师",
       "location": "厨房和就餐区",
@@ -81,7 +81,7 @@
   },
   {
     "title": "参观场馆",
-    "title_en": "",
+    "title_en": "Facility Tour",
     "cn": {
       "staff": "销售顾问 / 高尔夫助理",
       "location": "高尔夫场馆及展示区",

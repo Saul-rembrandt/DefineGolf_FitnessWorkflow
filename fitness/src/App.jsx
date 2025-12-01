@@ -3,7 +3,7 @@ import FlowChart from './components/FlowChart';
 import { ReceptionFlow, DetailPage, Reception } from './pages/reception/index';
 import { Tour } from './pages/tour/index';
 import { Assessment } from './pages/assessment/index';
-import { Training } from './pages/training/index';
+import { Training, TrainingFlow } from './pages/training/index';
 import { Reward } from './pages/reward/index';
 import './App.css';
 
@@ -17,6 +17,7 @@ function App() {
       <Route path="/tour" element={<Tour />} />
       <Route path="/assessment" element={<Assessment />} />
       <Route path="/training" element={<Training />} />
+      <Route path="/training/flow" element={<TrainingFlow />} />
       <Route path="/reward" element={<Reward />} />
     </Routes>
   );
