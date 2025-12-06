@@ -1,7 +1,34 @@
 import json
 import re
+import sys
 
-def parse_md_to_json(md_file_path, json_file_path):
+
+def translate_text(text, dest='en'):
+    """尝试将 text 翻译成目标语言 dest。
+    优先使用 googletrans，其次尝试 deep_translator；若两者都不可用或出错，返回原文。
+    """
+    if not text:
+        return ''
+    # 1) try googletrans
+    try:
+        from googletrans import Translator
+        translator = Translator()
+        translated = translator.translate(text, dest=dest)
+        return translated.text
+    except Exception:
+        pass
+
+    # 2) try deep_translator
+    try:
+        from deep_translator import GoogleTranslator
+        return GoogleTranslator(source='auto', target=dest).translate(text)
+    except Exception:
+        pass
+
+    # fallback: return original text
+    return text
+
+def parse_md_to_json(md_file_path, json_file_path, do_translate=False):
     """将 reception.md 文件转换为 JSON 格式"""
     
     with open(md_file_path, 'r', encoding='utf-8') as f:
@@ -20,7 +47,7 @@ def parse_md_to_json(md_file_path, json_file_path):
         
         item = {
             'title': title,
-            'title_en': '',
+            'title_en': translate_text(title) if do_translate else '',
             'cn': {
                 'staff': '',
                 'location': '',
@@ -91,4 +118,8 @@ if __name__ == '__main__':
     script_dir = os.path.dirname(os.path.abspath(__file__))
     md_path = os.path.join(script_dir, 'reception.md')
     json_path = os.path.join(script_dir, 'reception.json')
-    parse_md_to_json(md_path, json_path)
+    # 可选参数：传入 --translate 来启用标题自动翻译（需要安装 googletrans 或 deep_translator 并联网）
+    do_translate = '--translate' in sys.argv
+    if do_translate:
+        print('启用标题翻译（title -> title_en）')
+    parse_md_to_json(md_path, json_path, do_translate=do_translate)
