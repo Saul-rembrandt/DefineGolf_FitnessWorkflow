@@ -19,7 +19,8 @@
   flex: 1;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #ffffff url('/images/BG/define-golf-bg.png') no-repeat center center;
+  background-size: contain;
   overflow: hidden;
 }
 
@@ -59,6 +60,41 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 隐藏所有 Handle */
+.flowchart-wrapper .react-flow__handle {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+/* Group 节点样式 */
+.group-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #90CAF9;
+}
+
+.group-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group-item {
+  background: #2196F3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  white-space: pre-line;
+  line-height: 1.4;
 }
 
 /* 流程说明区域 - PC端横向布局 */

@@ -179,7 +179,7 @@ const initialEdges = [
   
   // AI系统连线
   { id: 'edb1', source: 'db1', target: 'ai1', label: '训练内容\n training content', type: 'smoothstep', style: { stroke: '#F5A623' }, markerEnd: { type: MarkerType.ArrowClosed, color: '#F5A623' } },
-  { id: 'eai1', source: 'ai1', target: 'plan1', sourceHandle: 'bottom', targetHandle: 'top', label: '管理并记录', type: 'smoothstep', style: { stroke: '#F5A623' }, markerEnd: { type: MarkerType.ArrowClosed, color: '#F5A623' } },
+  { id: 'eai1', source: 'ai1', target: 'plan1', sourceHandle: 'bottom', targetHandle: 'top', label: '管理并记录\n manage and record', type: 'smoothstep', style: { stroke: '#F5A623' }, markerEnd: { type: MarkerType.ArrowClosed, color: '#F5A623' } },
   // 规划节点连接到主流程（包括冥想）
   { id: 'eplan0', source: 'plan1', target: 't3', type: 'smoothstep', style: { stroke: '#F5A623' }, markerEnd: { type: MarkerType.ArrowClosed, color: '#F5A623' } },
   { id: 'eplan1', source: 'plan1', target: 't4', type: 'smoothstep', style: { stroke: '#F5A623' }, markerEnd: { type: MarkerType.ArrowClosed, color: '#F5A623' } },
